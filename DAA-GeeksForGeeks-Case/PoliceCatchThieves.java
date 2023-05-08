@@ -2,11 +2,10 @@
 
 // Java program to find maximum number of thieves caught
 // import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
 
 public class PoliceCatchThieves {
-    // Returns maximum number of thieves
-    // that can be caught.
+    // Returns maximum number of thieves that can be caught.
     static int policeThief(char arr[], int n, int k) {
         // -> res merupakan variabel yang akan di-return. Bisa dianggap saja res = response
         int res = 0;
@@ -33,19 +32,26 @@ public class PoliceCatchThieves {
 
         // track lowest current indices of
         // thief: thi[l], police: pol[r]
+        // -> Karena tidak menggunakan perulangan for, maka diinisialisasi masing-masing key untuk mengakses value (yang menjadi index) tiap-tiap ArrayList (l untuk thi dan r untuk pol)
+        // -> Yang mana ke depannya akan terus bertambah di masing-masing kondisi
         int l = 0, r = 0;
 
-        // Perulangan while yang terus menerus dilakukan selama tiap polisi dan pencuri dalam ArrayList masing-masing belum dieksekusi.
+        // -> Perulangan while yang terus menerus dilakukan selama tiap index polisi dan index pencuri dalam ArrayList masing-masing belum dieksekusi dalam program.
         while (l < thi.size() && r < pol.size()) {
             // can be caught
+            // -> Kondisi jika pencuri berada di dekat polisi dan polisi tersebut bisa menangkapnya karena memenuhi batas melangkah (k). 
             if (Math.abs(thi.get(l) - pol.get(r)) <= k) {
+                // -> Maka secara resmi pencuri tertangkap. Jadi variabel res yang nantinya akan di-return bertambah 1
                 res++;
+                // -> Selain nilai res, l dan r juga ditambah agar dapat diakses ke index selanjutnya.
                 l++;
                 r++;
                 // increment the minimum index
-            } else if (thi.get(l) < pol.get(r)) {
+            } else if (thi.get(l) < pol.get(r)) { // -> Jika kondisi "<= k" tidak terpenuhi, maka lanjut cek apakah posisi pencuri lebih kecil dari posisi polisi dalam index yang sama.
+                // -> Maka lanjut ke index posisi pencuri selanjutnya di dalam ArrayList thi.
                 l++;
-            } else {
+            } else { // -> Kondisi terakhir jika semua di atas tidak terpenuhi.
+                // -> Maka index posisi polisi selanjutnya yang akan dianalisis.
                 r++;
             }
         }
