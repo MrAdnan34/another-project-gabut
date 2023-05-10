@@ -1,4 +1,5 @@
 // CASE 4: Assign Mice to Holes
+// Link: https://www.geeksforgeeks.org/assign-mice-holes/
 
 // Java program to find the minimum time to place all mice in all holes.
 import java.util.ArrayList;
@@ -6,6 +7,7 @@ import java.util.Collections;
 
 public class AssignMice {
 	// Returns minimum time required to place mice in holes.
+    // -> Mengembalikan total waktu yang dibutuhkan agar semua tikus bisa masuk ke lobang
 	public int assignHole(ArrayList<Integer> mice, ArrayList<Integer> holes) {
 
         // -> Jika jumlah tikus dan lobang tidak sama, maka kriteria soal tidak terpenuhi

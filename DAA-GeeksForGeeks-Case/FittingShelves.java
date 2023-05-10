@@ -1,8 +1,10 @@
 // CASE 3: Fitting Shelves Problem
+// Link: https://www.geeksforgeeks.org/fitting-shelves-problem/
 // Note: 1/2 completed
 
 // Java program to count all rotation divisible by 4.
 public class FittingShelves {
+	// -> Tidak me-return apa-apa karena hasilnya langsung diprint out
 	static void minSpacePreferLarge(int wall, int m, int n) {
 		// For simplicity, Assuming m is always smaller than n
 		// initializing output variables
@@ -39,7 +41,6 @@ public class FittingShelves {
 		System.out.println(num_m + " " + num_n + " " + min_empty);
 	}
 
-	// Driver Code
 	public static void main(String[] args) {
 		int wall = 24, m = 3, n = 5;
 		minSpacePreferLarge(wall, m, n);

@@ -1,8 +1,9 @@
 // CASE 2: Minimum Swaps For Bracket Balancing
+// Link: https://www.geeksforgeeks.org/minimum-swaps-bracket-balancing/
 
 // Java Program to count swaps required to balance string
 public class MinimumSwaps {
-	
+	// -> Mengembalikan total berapa kali swap yang dibutuhkan agar semua karakter dalam String bisa seimbang atau simetris
 	static int swapCount(String s) {
 		char[] chars = s.toCharArray();
 
@@ -10,8 +11,7 @@ public class MinimumSwaps {
 		// s = "[][][]";
 		// chars = ['[', ']', '[', ']', '[', ']']
 
-		// stores total number of Left and Right
-		// brackets encountered
+		// stores total number of Left and Right brackets encountered
 		// -> Variabel untuk menampung kurung buka '[' dan kurung tutup ']'
 		int countLeft = 0, countRight = 0;
 
@@ -33,13 +33,11 @@ public class MinimumSwaps {
 
 				// -> Terdeteksi adanya kurung tidak seimbang
 				if (imbalance > 0) {
-					// swaps count is last swap count + total
-					// number imbalanced brackets
+					// swaps count is last swap count + total number imbalanced brackets
 					// -> Setelah memasuki kondisi adanya kurung tidak seimbang, maka jumlah swap (pertukaran posisi) harus ditambah dengan berapa jumlah kurung tidak seimbang.
 					swap += imbalance;
 
-					// imbalance decremented by 1 as it solved
-					// only one imbalance of Left and Right
+					// imbalance decremented by 1 as it solved only one imbalance of Left and Right
 					// -> Setelah ditukar, maka jumlah kurung tidak seimbang dikurangi 1
 					imbalance--;
 				}
@@ -48,18 +46,16 @@ public class MinimumSwaps {
 				// -> Menambah jumlah kurung kiri
 				countRight++;
 
-				// imbalance is reset to current difference
-				// between Left and Right brackets
+				// imbalance is reset to current difference between Left and Right brackets
 				// -> imbalance dikurangi kurung kanan dengan kurung kiri KARENA untuk menginisialisasi.
 				// -> Alasan kanan dikurang dengan kiri adalah karena ini berada dalam kondisi jika char[i] == ']'. Setelah ini, maka konidisi if(imbalance > 0) di atas bisa berjalan.
-				// -> Inisialisasi ulang, bukan menambah nilai (+=)
 				imbalance = (countRight - countLeft);
+				// -> Inisialisasi ulang, bukan menambah nilai (+=)
 			}
 		}
 		return swap;
 	}
 
-// Driver code
 	public static void main(String args[]) {
 		String s = "[]][][";
 		// "[][]]["
@@ -74,7 +70,6 @@ public class MinimumSwaps {
 
 		s = "[[][]]";
 		System.out.println(swapCount(s));
-		
 	}
 }
 // This code is contributed by Janmejaya Das.

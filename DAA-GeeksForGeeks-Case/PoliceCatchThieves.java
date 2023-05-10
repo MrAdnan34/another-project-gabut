@@ -1,4 +1,5 @@
 // CASE 1: Policemen Catch Thieves
+// Link: https://www.geeksforgeeks.org/policemen-catch-thieves/
 
 // Java program to find maximum number of thieves caught
 // import java.io.*;
@@ -6,6 +7,7 @@ import java.util.ArrayList;
 
 public class PoliceCatchThieves {
     // Returns maximum number of thieves that can be caught.
+    // -> Mengembalikan jumlah berapa banyak pencuri yang dapat tertangkap
     static int policeThief(char arr[], int n, int k) {
         // -> res merupakan variabel yang akan di-return. Bisa dianggap saja res = response
         int res = 0;
@@ -59,9 +61,8 @@ public class PoliceCatchThieves {
     }
 
     public static void main(String args[]) {
-        long startTime = System.currentTimeMillis();
+        // long startTime = System.currentTimeMillis();
 
-        // Kode utama program
         int k, n;
         char arr1[] = new char[] { 'P', 'T', 'T', 'P', 'T' };
         k = 2;
@@ -78,9 +79,9 @@ public class PoliceCatchThieves {
         n = arr3.length;
         System.out.println("Maximum thieves caught: " + policeThief(arr3, n, k));
 
-        long endTime = System.currentTimeMillis();
-        long executionTime = endTime - startTime;
-        System.out.println("Waktu eksekusi: " + executionTime + " milidetik");
+        // long endTime = System.currentTimeMillis();
+        // long executionTime = endTime - startTime;
+        // System.out.println("Waktu eksekusi kode program: " + executionTime + " ms");
     }
 }
 
