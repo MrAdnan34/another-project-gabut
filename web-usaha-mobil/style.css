@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    background: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    z-index: 99999;
+}
+
+nav .container-icon {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+nav .container-icon .logo {
+    font-size: 35px;
+}
+
+nav .container-icon p {
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    font-family: serif;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background: lightgray;
+    border-radius: 10px;
+    color: black;
+}
+
+nav ul li:hover {
+    background: darkgray;
+    transition: 0.5s;
+    border-radius: 20px;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container-hero-text {
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+header .container-hero-text .hero-text {
+    text-align: center;
+    /* background: #000; */
+}
+
+header .container-hero-text .hero-text h2 {
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+header .container-hero-text .hero-text p {
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+header img {
+    width: 100%;
+    filter: brightness(30%);
+}
+
+main {
+    background: darkgray;
+    margin-top: 0.5px;
+}
+
+.section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.section-text .container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 40%;
+    padding: 65px 25px;
+    background-color: dimgray;
+    border-radius: 10px;
+}
+
+.section-text .container-text h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.section-text .container-text p {
+    width: 70%;
+    /* margin-bottom: 20px; */
+}
+
+/* .section-text .container-text p:nth-of-type(2) {
+    font-size: 13px;
+    display: block;
+    text-align: start;
+}
+
+.section-text .container-text p a {
+    display: block;
+    text-align: start;
+} */
+
+.section-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.section-pictures .container-picture {
+    background: gray;
+    margin: 20px;
+    width: 30%;
+    margin: 30px 50px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(185, 185, 185);
+}
+
+.section-pictures .container-picture:hover {
+    background-color: dimgray;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.section-pictures .container-picture img {
+    width: 100%;
+    height: 35vh;
+}
+
+.section-pictures .container-picture h3 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.section-promote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+    color: black;
+    padding: 10px;
+}
+
+.section-promote:hover {
+    background-color: gray;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.section-subscribe .container-subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: darkgray;
+    padding: 65px 20px;
+}
+
+.section-subscribe .container-subscribe .subscribe-form {
+    width: 50%;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 0px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.section-subscribe .container-subscribe .subscribe-form h2 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.section-subscribe .container-subscribe .subscribe-form p:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.section-subscribe .container-subscribe .subscribe-form input {
+    width: 89%;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: serif;
+    background-color: lightgray;
+    display: block;
+}
+
+.section-subscribe .container-subscribe .subscribe-form input::placeholder {
+    letter-spacing: 1px;
+}
+
+.section-subscribe .container-subscribe .subscribe-form textarea {
+    resize: none;
+    width: 89%;    
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: serif;
+    background-color: lightgray;
+    display: block;
+}
+
+.section-subscribe .container-subscribe .subscribe-form button {
+    float: right;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: lightgray;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 20px;
+    color: #707070;
+    /* background: #000; */
+    margin-bottom: 5px;
+}
+
+footer .footer .footer-left h3 {
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+footer .footer .footer-left p {
+    width: 350px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+footer .footer .footer-right p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer .footer .footer-right a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+footer .footer .footer-right img {
+    width: 3vw;
+    margin-right: 15px;
+}
+
+footer .footer .footer-right img:hover {
+    width: 4vw;
+    transition: 0.5s;
+}
+
+footer .footer-copyright {
+    float: right;
+    width: 100%;
+    padding: 5px 15px;
+    background: #f2f2f2;
+    font-size: 12px;
+    color: #8b8b8b;
+    letter-spacing: 1px;
+}
+
+footer .footer-copyright p {
+    float: right;
+}
