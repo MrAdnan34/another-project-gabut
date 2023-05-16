@@ -68,6 +68,6 @@ public class AssignMice {
 		holes.add(10);
         // holes = [4, 0, 10]
 
-		System.out.println("The last mouse gets into "+ "the hole in time: "+ am.assignHole(mice, holes));
+		System.out.println("The last mouse gets into "+ "the hole in time: "+ am.assignHole(mice, holes)); // 6
 	}
 }

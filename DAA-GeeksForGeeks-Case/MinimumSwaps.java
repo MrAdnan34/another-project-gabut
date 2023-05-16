@@ -60,16 +60,16 @@ public class MinimumSwaps {
 		String s = "[]][][";
 		// "[][]]["
 		// "[][][]"
-		System.out.println(swapCount(s));
+		System.out.println(swapCount(s)); // 2
 
 		s = "]][[";
 		// "][]["
 		// "[]]["
 		// "[][]"
-		System.out.println(swapCount(s));
+		System.out.println(swapCount(s)); // 3
 
 		s = "[[][]]";
-		System.out.println(swapCount(s));
+		System.out.println(swapCount(s)); // 0
 	}
 }
 // This code is contributed by Janmejaya Das.
