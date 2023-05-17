@@ -49,7 +49,7 @@ public class MinimumSwaps {
 				// imbalance is reset to current difference between Left and Right brackets
 				// -> imbalance dikurangi kurung kanan dengan kurung kiri KARENA untuk menginisialisasi.
 				// -> Alasan kanan dikurang dengan kiri adalah karena ini berada dalam kondisi jika char[i] == ']'. Setelah ini, maka konidisi if(imbalance > 0) di atas bisa berjalan.
-				imbalance = (countRight - countLeft);
+				imbalance = countRight - countLeft;
 				// -> Inisialisasi ulang, bukan menambah nilai (+=)
 			}
 		}
