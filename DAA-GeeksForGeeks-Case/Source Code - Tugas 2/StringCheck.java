@@ -46,24 +46,25 @@ public class StringCheck {
         // Memanfaatkan method yang telah dibuat sebelumnya
         String s3 = stringSum(s1, s2);
 
-        // Mendapatkan panjang/ukuran variabel dari hasil method sebelumnya
-        int s3_len = s3.length();
+        // Deklarasi variable yang mana isinya yaitu mendapatkan panjang/ukuran variabel dari hasil method sebelumnya (ada di String s3)
+        int s3Len = s3.length();
 
         // Cek dulu apakah jumlah digit s3 lebih besar dari sisa string yang tersedia
-        if (s3_len > str.length() - len1 - len2 - beg) {
+        if (s3Len > str.length() - len1 - len2 - beg) {
             // Berarti dia tidak dianggap benar
             return false;
         }
 
         // Memeriksa apakah s3 sama dengan substring berikutnya dalam string utama
-        if (s3.equals(str.substring(beg + len1 + len2, beg + len1 + len2 + s3_len))) {
-            if (beg + len1 + len2 + s3_len == str.length()) {
+        if (s3.equals(str.substring(beg + len1 + len2, beg + len1 + len2 + s3Len))) {
+            if (beg + len1 + len2 + s3Len == str.length()) {
                 // Jika sudah mencapai akhir string, maka langsung return true
                 return true;
             }
 
+            // BRUT
             // Pemanggilan rekursif untuk memeriksa substring berikutnya
-            return checkSumStrUtil(str, beg + len1, len2, s3_len);
+            return checkSumStrUtil(str, beg + len1, len2, s3Len);
         }
 
         return false; // Default return tetap dianggap false atau salah
