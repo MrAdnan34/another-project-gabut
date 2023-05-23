@@ -3,7 +3,7 @@
 
 public class StringCheck {
     // Method/Fungsi untuk menjumlahkan dua bilangan dalam bentuk string
-    public static String string_sum(String str1, String str2) {
+    public static String stringSum(String str1, String str2) {
         if (str1.length() < str2.length()) {
             String temp = str1;
             str1 = str2;
@@ -11,6 +11,7 @@ public class StringCheck {
         }
         int m = str1.length();
         int n = str2.length();
+        // Deklarasi variabel yang mana akan menjadi nilai return
         String ans = "";
 
         // Inisialisasi nilai awal dengan 0
@@ -34,6 +35,7 @@ public class StringCheck {
             // Jika masih ada carry setelah perulangan, tambahkan ke hasil
             ans = Character.toString((char)(carry + '0')) + ans;
         }
+
         return ans;
     }
 
@@ -41,8 +43,10 @@ public class StringCheck {
     public static boolean checkSumStrUtil(String str, int beg, int len1, int len2) {
         String s1 = str.substring(beg, beg + len1);
         String s2 = str.substring(beg + len1, beg + len1 + len2);
-        String s3 = string_sum(s1, s2);
+        // Memanfaatkan method yang telah dibuat sebelumnya
+        String s3 = stringSum(s1, s2);
 
+        // Mendapatkan panjang/ukuran variabel dari hasil method sebelumnya
         int s3_len = s3.length();
 
         // Cek dulu apakah jumlah digit s3 lebih besar dari sisa string yang tersedia
@@ -85,7 +89,7 @@ public class StringCheck {
 
         // Contoh pertama
         result = isSumStr("1212243660");
-        System.out.println(result == true ? "True" : "False");
+        System.out.println(result == true ? "True" : "False"); // Ternary Operator
 
         // Contoh pengujian kedua
         result = isSumStr("123456787");
