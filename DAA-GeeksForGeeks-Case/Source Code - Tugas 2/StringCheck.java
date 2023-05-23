@@ -1,4 +1,5 @@
-// import java.util.*;
+// CASE: Check if a given string is sum-string
+// Link: https://www.geeksforgeeks.org/check-given-string-sum-string/
 
 public class StringCheck {
     // Fungsi untuk menjumlahkan dua bilangan dalam bentuk String
