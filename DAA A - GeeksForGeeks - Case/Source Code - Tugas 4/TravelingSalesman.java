@@ -7,35 +7,39 @@ import java.util.Arrays;
 
 public class TravelingSalesman {
 
-    static int N = 4;
+    // Total kota yang akan dikunjungi
+    private static int N = 4;
 
     // final_path[] menyimpan solusi akhir yaitu jalur salesman.
-    static int final_path[] = new int[N + 1];
+    private static int final_path[] = new int[N + 1];
 
     // visited[] melacak kota yang telah dikunjungi dalam suatu jalur tertentu
-    static boolean visited[] = new boolean[N];
+    private static boolean visited[] = new boolean[N];
 
     // Menyimpan biaya minimum dari jalur terpendek yang ditemukan
-    static int final_res = Integer.MAX_VALUE;
+    private static int final_res = Integer.MAX_VALUE;
 
     // Fungsi untuk menyalin solusi sementara ke solusi akhir
-    static void copyToFinal(int curr_path[]) {
-        for (int i = 0; i < N; i++)
+    private static void copyToFinal(int curr_path[]) {
+        for (int i = 0; i < N; i++) {
             final_path[i] = curr_path[i];
+        }
         final_path[N] = curr_path[0];
     }
 
     // Fungsi untuk mencari sisi minimum pertama yang berakhir pada vertex i
-    static int firstMin(int adj[][], int i) {
+    private static int firstMin(int adj[][], int i) {
         int min = Integer.MAX_VALUE;
-        for (int k = 0; k < N; k++)
-            if (adj[i][k] < min && i != k)
+        for (int k = 0; k < N; k++) {
+            if (adj[i][k] < min && i != k) {
                 min = adj[i][k];
+            }
+        }
         return min;
     }
 
     // Fungsi untuk mencari sisi minimum kedua yang berakhir pada vertex i
-    static int secondMin(int adj[][], int i) {
+    private static int secondMin(int adj[][], int i) {
         int first = Integer.MAX_VALUE, second = Integer.MAX_VALUE;
         for (int j = 0; j < N; j++) {
             if (i == j)
@@ -44,8 +48,9 @@ public class TravelingSalesman {
             if (adj[i][j] <= first) {
                 second = first;
                 first = adj[i][j];
-            } else if (adj[i][j] <= second && adj[i][j] != first)
+            } else if (adj[i][j] <= second && adj[i][j] != first) {
                 second = adj[i][j];
+            }
         }
         return second;
     }
@@ -55,16 +60,13 @@ public class TravelingSalesman {
     // curr_weight -> menyimpan bobot jalur yang telah dilalui
     // level -> level saat ini dalam pergerakan di pohon ruang pencarian
     // curr_path[] -> tempat penyimpanan solusi yang akan di-copy ke final_path[]
-    static void TSPRec(int adj[][], int curr_bound, int curr_weight,
-            int level, int curr_path[]) {
-        // Kasus dasar ketika mencapai level N yang berarti semua kota telah dikunjungi
-        // sekali
+    private static void TSPRec(int adj[][], int curr_bound, int curr_weight, int level, int curr_path[]) {
+        // Kasus dasar ketika mencapai level N yang berarti semua kota telah dikunjungi sekali
         if (level == N) {
             // Periksa apakah terdapat sisi dari kota terakhir ke kota awal
             if (adj[curr_path[level - 1]][curr_path[0]] != 0) {
                 // curr_res menyimpan bobot total dari solusi yang ditemukan
-                int curr_res = curr_weight +
-                        adj[curr_path[level - 1]][curr_path[0]];
+                int curr_res = curr_weight + adj[curr_path[level - 1]][curr_path[0]];
 
                 // Perbarui hasil akhir dan jalur akhir jika curr_res lebih baik
                 if (curr_res < final_res) {
@@ -104,7 +106,7 @@ public class TravelingSalesman {
                 curr_weight -= adj[curr_path[level - 1]][i];
                 curr_bound = temp;
 
-                // Mengeset visited[i] menjadi false saat melakukan backtracking
+                // Meng-set/mengatur visited[i] menjadi false saat melakukan backtracking
                 Arrays.fill(visited, false);
                 for (int j = 0; j <= level - 1; j++) {
                     visited[curr_path[j]] = true;
@@ -114,7 +116,7 @@ public class TravelingSalesman {
     }
 
     // Fungsi yang memanggil TSPRec dan mencetak solusi akhir
-    static void TSP(int adj[][]) {
+    private static void TSP(int adj[][]) {
         int curr_path[] = new int[N + 1];
 
         // Hasil awal dari batasan bawah adalah tak terhingga
