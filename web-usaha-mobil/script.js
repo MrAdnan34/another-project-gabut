@@ -19,4 +19,5 @@ const navClick = (value) => {
     //         behavior: "smooth"
     //     })
     // }
+
 }
