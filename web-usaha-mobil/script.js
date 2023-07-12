@@ -1,4 +1,3 @@
-// console.log('Hello World!');
 // console.log(window.scrollY);
 
 // document.addEventListener('scroll', () => {
