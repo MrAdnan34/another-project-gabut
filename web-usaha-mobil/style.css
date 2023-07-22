@@ -101,7 +101,6 @@ header .container-hero-text .hero-text h2 {
     letter-spacing: 1px;
 }
 
-
 header .container-hero-text .hero-text p {
     margin-top: 20px;
     letter-spacing: 0.5px;
@@ -145,6 +144,7 @@ main {
     width: 70%;
     /* margin-bottom: 20px; */
 }
+
 
 /* .section-text .container-text p:nth-of-type(2) {
     font-size: 13px;
