@@ -1,4 +1,4 @@
-// console.log(window.scrollY);
+
 
 // document.addEventListener('scroll', () => {
 //     console.log(window.scrollY)
