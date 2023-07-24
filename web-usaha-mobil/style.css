@@ -177,7 +177,6 @@ main {
     color: rgb(185, 185, 185);
 }
 
-
 .section-pictures .container-picture:hover {
     background-color: dimgray;
     color: rgb(255, 255, 255);
@@ -208,6 +207,7 @@ main {
     color: whitesmoke;
     transition: 0.5s;
 }
+
 
 .section-subscribe .container-subscribe {
     display: flex;
