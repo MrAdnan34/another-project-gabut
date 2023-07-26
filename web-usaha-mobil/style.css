@@ -208,7 +208,6 @@ main {
     transition: 0.5s;
 }
 
-
 .section-subscribe .container-subscribe {
     display: flex;
     justify-content: center;
@@ -227,8 +226,9 @@ main {
     flex-wrap: wrap;
     padding: 25px 0px;
     border-radius: 15px;
-    text-align: center;
+    /* text-align: center; */
 }
+
 
 .section-subscribe .container-subscribe .subscribe-form h2 {
     font-size: 35px;
