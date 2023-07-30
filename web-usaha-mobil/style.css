@@ -264,10 +264,9 @@ main {
     border-radius: 5px;
     margin-bottom: 10px;
     font-family: serif;
-    /* background-color: lightgray; */
+    background-color: lightgray;
     display: block;
 }
-
 
 .section-subscribe .container-subscribe .subscribe-form button {
     float: right;
@@ -275,9 +274,10 @@ main {
     cursor: pointer;
     border-radius: 10px;
     background-color: black;
-    color: white;
-    font-weight: bold;
+    /* color: white;
+    font-weight: bold; */
 }
+
 
 footer {
     background-color: lightgray;
