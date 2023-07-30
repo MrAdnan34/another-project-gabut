@@ -248,9 +248,8 @@ main {
     margin-bottom: 10px;
     font-family: serif;
     background-color: lightgray;
-    /* display: block; */
+    display: block;
 }
-
 
 .section-subscribe .container-subscribe .subscribe-form input::placeholder {
     letter-spacing: 1px;
@@ -265,9 +264,10 @@ main {
     border-radius: 5px;
     margin-bottom: 10px;
     font-family: serif;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     display: block;
 }
+
 
 .section-subscribe .container-subscribe .subscribe-form button {
     float: right;
