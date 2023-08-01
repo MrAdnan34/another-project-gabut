@@ -4,7 +4,6 @@ const navClick = (value) => {
         behavior: 'smooth'
     });
 
-    // if (component.id === 'content2') {
     //     console.log('anu2');
     //     window.scrollTo({
     //         top: component.id,
