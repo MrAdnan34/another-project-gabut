@@ -4,7 +4,6 @@ const navClick = (value) => {
         behavior: 'smooth'
     });
 
-    //     console.log('anu2');
     //     window.scrollTo({
     //         top: component.id,
     //         behavior: "smooth"
