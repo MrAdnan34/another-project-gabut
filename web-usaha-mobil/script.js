@@ -4,7 +4,6 @@ const navClick = (value) => {
         behavior: 'smooth'
     });
 
-    //         top: component.id,
     //         behavior: "smooth"
     //     })
     // }
