@@ -36,10 +36,11 @@ nav .container-icon p {
     margin-left: 15px;
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    /* color: white;
     font-family: serif;
-    font-style: italic;
+    font-style: italic; */
 }
+
 
 nav ul {
     display: flex;
