@@ -23,11 +23,10 @@ nav .container-icon {
     display: flex;
     align-items: center;
     /* background-color: red; */
-    /* position: absolute;
+    position: absolute;
     left: 15px;
-    top: 15px; */
+    top: 15px;
 }
-
 
 nav .container-icon .logo {
     font-size: 35px;
