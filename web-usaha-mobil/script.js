@@ -3,6 +3,4 @@ const navClick = (value) => {
     component.scrollIntoView({
         behavior: 'smooth'
     });
-
-
 }
