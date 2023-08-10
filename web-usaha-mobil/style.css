@@ -59,18 +59,18 @@ nav ul li {
 
 nav ul li:hover {
     background: darkgray;
-    /* transition: 0.5s;
+    transition: 0.5s;
     border-radius: 20px;
-    color: white; */
+    color: white;
 }
-
 
 nav ul li a {
     text-decoration: none;
-    font-size: 25px;
+    /* font-size: 25px; */
     cursor: pointer;
     font-weight: bold;
 }
+
 
 header {
     margin-top: 65px;
