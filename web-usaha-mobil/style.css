@@ -102,9 +102,8 @@ header .container-hero-text .hero-text h2 {
 
 header .container-hero-text .hero-text p {
     margin-top: 20px;
-    /* letter-spacing: 0.5px; */
+    letter-spacing: 0.5px;
 }
-
 
 header img {
     width: 100%;
@@ -112,9 +111,10 @@ header img {
 }
 
 main {
-    background: darkgray;
-    margin-top: 0.5px;
+    /* background: darkgray;
+    margin-top: 0.5px; */
 }
+
 
 .section-text {
     display: flex;
