@@ -124,9 +124,9 @@ main {
 
 .section-text .container-text {
     display: flex;
-    /* justify-content: center;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
     text-align: center;
     width: 40%;
     padding: 65px 25px;
@@ -134,11 +134,11 @@ main {
     border-radius: 10px;
 }
 
-
 .section-text .container-text h2 {
     font-size: 34px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
+
 
 .section-text .container-text p {
     width: 70%;
