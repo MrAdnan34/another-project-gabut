@@ -176,12 +176,12 @@ main {
     color: rgb(185, 185, 185);
 }
 
-
 .section-pictures .container-picture:hover {
     background-color: dimgray;
-    color: rgb(255, 255, 255);
-    transition: 0.3s;
+    /* color: rgb(255, 255, 255);
+    transition: 0.3s; */
 }
+
 
 .section-pictures .container-picture img {
     width: 100%;
