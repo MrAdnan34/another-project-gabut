@@ -210,12 +210,11 @@ main {
 .section-subscribe .container-subscribe {
     display: flex;
     justify-content: center;
-    /* align-items: center;
+    align-items: center;
     width: 100%;
     background: darkgray;
-    padding: 65px 20px; */
+    padding: 65px 20px;
 }
-
 
 .section-subscribe .container-subscribe .subscribe-form {
     width: 50%;
