@@ -221,19 +221,19 @@ main {
     background: gray;
     display: flex;
     justify-content: center;
-    /* align-items: center;
+    align-items: center;
     flex-wrap: wrap;
     padding: 25px 0px;
     border-radius: 15px;
-    text-align: center; */
+    text-align: center;
 }
-
 
 .section-subscribe .container-subscribe .subscribe-form h2 {
     font-size: 35px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    /* letter-spacing: 1px;
+    margin-bottom: 10px; */
 }
+
 
 .section-subscribe .container-subscribe .subscribe-form p:nth-of-type(2) {
     margin-bottom: 25px;
