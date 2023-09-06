@@ -257,26 +257,26 @@ main {
 .section-subscribe .container-subscribe .subscribe-form textarea {
     resize: none;
     width: 89%;    
-    /* font-size: 18px;
+    font-size: 18px;
     padding: 10px 15px;
     border: 2px solid darkslategray;
     border-radius: 5px;
-    margin-bottom: 10px; */
+    margin-bottom: 10px;
     font-family: serif;
     background-color: lightgray;
     display: block;
 }
-
 
 .section-subscribe .container-subscribe .subscribe-form button {
     float: right;
     padding: 10px 30px;
     cursor: pointer;
     border-radius: 10px;
-    background-color: black;
-    color: white;
+    /* background-color: black;
+    color: white; */
     font-weight: bold;
 }
+
 
 footer {
     background-color: lightgray;
