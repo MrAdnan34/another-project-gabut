@@ -282,14 +282,13 @@ footer {
 }
 
 footer .footer {
-    /* display: flex;
+    display: flex;
     justify-content: space-around;
-    padding: 35px 20px; */
+    padding: 35px 20px;
     color: #707070;
     /* background: #000; */
     margin-bottom: 5px;
 }
-
 
 footer .footer .footer-left h3 {
     font-size: 35px;
@@ -298,10 +297,11 @@ footer .footer .footer-left h3 {
 }
 
 footer .footer .footer-left p {
-    width: 350px;
+    /* width: 350px;
     margin-top: 15px;
     font-size: 17px;
-}
+} */
+
 
 footer .footer .footer-right p {
     font-size: 20px;
