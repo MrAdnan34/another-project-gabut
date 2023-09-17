@@ -297,11 +297,10 @@ footer .footer .footer-left h3 {
 }
 
 footer .footer .footer-left p {
-    /* width: 350px;
+    width: 350px;
     margin-top: 15px;
     font-size: 17px;
-} */
-
+}
 
 footer .footer .footer-right p {
     font-size: 20px;
@@ -310,12 +309,13 @@ footer .footer .footer-right p {
 
 footer .footer .footer-right a {
     text-decoration: none;
-    color: inherit;
+    /* color: inherit;
     display: block;
-    font-size: 18px;
+    font-size: 18px; */
     margin-bottom: 15px;
     cursor: pointer;
 }
+
 
 footer .footer .footer-right img {
     width: 3vw;
