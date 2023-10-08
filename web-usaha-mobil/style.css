@@ -24,10 +24,9 @@ nav .container-icon {
     align-items: center;
     /* background-color: red; */
     position: absolute;
-    /* left: 15px;
-    top: 15px; */
+    left: 15px;
+    top: 15px;
 }
-
 
 nav .container-icon .logo {
     font-size: 35px;
@@ -35,12 +34,13 @@ nav .container-icon .logo {
 
 nav .container-icon p {
     margin-left: 15px;
-    font-size: 25px;
+    /* font-size: 25px;
     font-weight: bold;
     color: white;
     font-family: serif;
-    font-style: italic;
+    font-style: italic; */
 }
+
 
 nav ul {
     display: flex;
