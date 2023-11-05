@@ -96,15 +96,15 @@ header .container-hero-text .hero-text {
 }
 
 header .container-hero-text .hero-text h2 {
-    /* font-size: 35px;
-    letter-spacing: 1px; */
+    font-size: 35px;
+    letter-spacing: 1px;
 }
-
 
 header .container-hero-text .hero-text p {
-    margin-top: 20px;
-    letter-spacing: 0.5px;
+    /* margin-top: 20px;
+    letter-spacing: 0.5px; */
 }
+
 
 header img {
     width: 100%;
