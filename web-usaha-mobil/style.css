@@ -106,15 +106,15 @@ header .container-hero-text .hero-text p {
 }
 
 header img {
-    /* width: 100%;
-    filter: brightness(30%); */
+    width: 100%;
+    filter: brightness(30%);
 }
-
 
 main {
     background: darkgray;
-    margin-top: 0.5px;
+    /* margin-top: 0.5px; */
 }
+
 
 .section-text {
     display: flex;
