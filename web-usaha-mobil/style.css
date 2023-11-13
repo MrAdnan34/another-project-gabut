@@ -112,16 +112,16 @@ header img {
 
 main {
     background: darkgray;
-    /* margin-top: 0.5px; */
+    margin-top: 0.5px;
 }
-
 
 .section-text {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 10px; */
 }
+
 
 .section-text .container-text {
     display: flex;
