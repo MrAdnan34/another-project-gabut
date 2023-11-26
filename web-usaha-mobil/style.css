@@ -136,10 +136,9 @@ main {
 
 
 .section-text .container-text h2 {
-    /* font-size: 34px;
-    margin-bottom: 20px; */
+    font-size: 34px;
+    margin-bottom: 20px;
 }
-
 
 .section-text .container-text p {
     width: 70%;
@@ -159,11 +158,12 @@ main {
 
 .section-pictures {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 10px; */
 }
+
 
 .section-pictures .container-picture {
     background: gray;
