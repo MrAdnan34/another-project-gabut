@@ -158,25 +158,25 @@ main {
 
 .section-pictures {
     display: flex;
-    /* justify-content: center;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 10px; */
+    margin-top: 10px;
 }
-
 
 .section-pictures .container-picture {
     background: gray;
     margin: 20px;
     width: 30%;
     margin: 30px 50px;
-    padding: 20px 20px;
+    /* padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     color: rgb(185, 185, 185);
 }
+
 
 .section-pictures .container-picture:hover {
     background-color: dimgray;
