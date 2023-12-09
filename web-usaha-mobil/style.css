@@ -190,18 +190,18 @@ main {
 
 .section-pictures .container-picture h3 {
     margin-top: 10px;
-    /* font-size: 22px; */
+    font-size: 22px;
 }
-
 
 .section-promote {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     background-color: dimgray;
     color: black;
-    padding: 10px;
+    padding: 10px; */
 }
+
 
 .section-promote:hover {
     background-color: gray;
