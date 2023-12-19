@@ -209,26 +209,26 @@ main {
 }
 
 .section-subscribe .container-subscribe {
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: darkgray; */
+    background: darkgray;
     padding: 65px 20px;
 }
-
 
 .section-subscribe .container-subscribe .subscribe-form {
     width: 50%;
     background: gray;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 25px 0px;
     border-radius: 15px;
-    text-align: center;
+    text-align: center; */
 }
+
 
 .section-subscribe .container-subscribe .subscribe-form h2 {
     font-size: 35px;
