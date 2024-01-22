@@ -324,8 +324,8 @@ footer .footer .footer-right img {
 
 
 footer .footer .footer-right img:hover {
-    width: 4vw;
-    transition: 0.5s;
+    /* width: 4vw;
+    transition: 0.5s; */
 }
 
 footer .footer-copyright {
