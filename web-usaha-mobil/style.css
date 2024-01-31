@@ -1,7 +1,7 @@
 * {
     padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+    /* margin: 0;
+    overflow-x: hidden; */
 }
 
 body {
@@ -339,5 +339,5 @@ footer .footer-copyright {
 }
 
 footer .footer-copyright p {
-    /* float: right; */
+    float: right;
 }
