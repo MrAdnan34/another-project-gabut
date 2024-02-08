@@ -9,25 +9,25 @@ body {
 }
 
 nav {
-    /* background: darkslategray;
+    background: darkslategray;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px; */
+    padding: 10px;
     position: fixed;
     z-index: 99999;
 }
-
 
 nav .container-icon {
     display: flex;
     align-items: center;
     /* background-color: red; */
     position: absolute;
-    left: 15px;
-    top: 15px;
+    /* left: 15px;
+    top: 15px; */
 }
+
 
 nav .container-icon .logo {
     font-size: 35px;
