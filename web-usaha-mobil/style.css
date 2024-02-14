@@ -35,18 +35,18 @@ nav .container-icon .logo {
 nav .container-icon p {
     margin-left: 15px;
     font-size: 25px;
-    /* font-weight: bold;
+    font-weight: bold;
     color: white;
     font-family: serif;
-    font-style: italic; */
+    font-style: italic;
 }
-
 
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
+
 
 nav ul li {
     list-style: none;
