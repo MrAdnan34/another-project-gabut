@@ -117,22 +117,21 @@ main {
 
 .section-text {
     display: flex;
-    /* justify-content: center;
+    justify-content: center;
     align-items: center;
-    padding-top: 10px; */
+    padding-top: 10px;
 }
-
 
 .section-text .container-text {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
     width: 40%;
     padding: 65px 25px;
     background-color: dimgray;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 
 
